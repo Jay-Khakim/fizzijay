@@ -1,9 +1,8 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-
-import { Environment, Float, View } from "@react-three/drei";
-import FloatingCan from "./FloatingCan";
+import { View } from "@react-three/drei";
+// import { Perf } from "r3f-perf";     // Use it for checking performance
 
 type Props = {};
 
@@ -27,6 +26,7 @@ export default function ViewCanvas({}: Props) {
       }}
     >
       <View.Port />
+      {/* <Perf /> */}
     </Canvas>
   );
 }
