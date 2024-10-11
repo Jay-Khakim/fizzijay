@@ -42,7 +42,7 @@ const AlternatingText = ({ slice }: AlternatingTextProps): JSX.Element => {
               <div
                 className={clsx(
                   index % 2 === 0 ? "col-start-1" : "md:col-start-2",
-                  "max-md: rounded-lg bg-white/20 p-4 backdrop-blur-lg",
+                  "rounded-lg p-4 backdrop-blur-lg max-md:bg-white/20",
                 )}
               >
                 <h2 className="text-balance text-6xl font-bold">
@@ -56,8 +56,6 @@ const AlternatingText = ({ slice }: AlternatingTextProps): JSX.Element => {
           ))}
         </div>
       </div>
-      Placeholder component for alternating_text (variation: {slice.variation})
-      Slices
     </Bounded>
   );
 };
